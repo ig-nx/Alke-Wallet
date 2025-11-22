@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet"
+        href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+  <link rel="stylesheet" href="assets/css/styles.css">
+  <title>Últimos movimientos</title>
+</head>
+
+<body>
+  <div class="container mt-5">
+    <h1>Últimos movimientos</h1>
+
+    <p><strong>Saldo actual:</strong> $ <span id="balanceTransactions">0</span></p>
+
+    <div class="form-group">
+      <label for="filterType">Filtrar por tipo:</label>
+      <select id="filterType" class="form-control">
+        <option value="todos">Todos</option>
+        <option value="deposito">Depósito</option>
+        <option value="transferencia_enviada">Transferencia enviada</option>
+      </select>
+    </div>
+
+    <ul id="transactionsList" class="list-group"></ul>
+  </div>
+
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script src="assets/js/script.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet"
+        href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+  <link rel="stylesheet" href="./assets/css/styles.css">
+  <title>Enviar dinero - Alke Wallet</title>
+</head>
+
+<body class="send-page">
+  <div class="container mt-5">
+    <h1>Enviar dinero</h1>
+
+    <p><strong>Saldo actual:</strong> $ <span id="balanceSend">0</span></p>
+
+    <div id="sendAlert"></div>
+
+    <!-- Búsqueda -->
+    <form id="searchForm" class="form-inline mb-3">
+      <input type="text" id="searchContact" class="form-control mr-2" placeholder="Buscar contacto">
+      <button type="submit" class="btn btn-outline-primary">Buscar</button>
+    </form>
+
+    <!-- Lista de contactos -->
+    <ul id="contactsList" class="list-group mb-3">
+      <li class="list-group-item contact-item" data-name="Ana">Ana - ALIASANA</li>
+      <li class="list-group-item contact-item" data-name="Carlos">Carlos - CARLOS123</li>
+      <li class="list-group-item contact-item" data-name="María">María - MARIAXYZ</li>
+    </ul>
+
+    <!-- Monto -->
+    <div class="form-group">
+      <label for="sendAmount">Monto a enviar:</label>
+      <input type="number" id="sendAmount" class="form-control" min="1" step="0.01">
+    </div>
+
+    <button id="sendMoneyBtn" class="btn btn-warning mb-3 d-none">
+      Enviar dinero
+    </button>
+
+    <hr>
+
+    <!-- Nuevo contacto -->
+    <button id="showNewContactForm" class="btn btn-outline-secondary mb-2">
+      Agregar nuevo contacto
+    </button>
+
+    <div id="newContactForm" class="card p-3 mb-3" style="display:none;">
+      <form id="addContactForm">
+        <div class="form-group">
+          <label for="newContactName">Nombre</label>
+          <input type="text" id="newContactName" class="form-control">
+        </div>
+        <div class="form-group">
+          <label for="newContactAlias">Alias</label>
+          <input type="text" id="newContactAlias" class="form-control">
+        </div>
+        <button type="submit" class="btn btn-success">Guardar contacto</button>
+        <button id="cancelNewContact" class="btn btn-link">Cancelar</button>
+      </form>
+    </div>
+
+  </div>
+
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script src="assets/js/script.js"></script>
+</body>
+
+</html>

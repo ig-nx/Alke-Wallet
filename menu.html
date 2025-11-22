@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet"
+        href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+  <link rel="stylesheet" href="./assets/css/styles.css">
+  <title>Alke Wallet - Menú</title>
+</head>
+
+<body class="menu-page">
+  <main class="menu-card shadow-sm">
+    <h1>Menu principal</h1>
+    <div id="menuAlert" class="menu-alert"></div>
+
+    <section class="balance-section text-center mt-2">
+      <h4>Saldo actual</h4>
+      <p id="balanceMenu" class="balance-amount">0</p>
+    </section>
+
+    <div class="menu-actions mt-4">
+      <button id="goDeposit" class="btn btn-primary btn-block">
+        Depositar
+      </button>
+      <button id="goSendMoney" class="btn btn-outline-secondary btn-block mt-3">
+        Enviar dinero
+      </button>
+      <button id="goTransactions" class="btn btn-outline-info btn-block mt-3">
+        Últimos movimientos
+      </button>
+    </div>
+  </main>
+
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script src="assets/js/script.js"></script>
+</body>
+
+</html>
